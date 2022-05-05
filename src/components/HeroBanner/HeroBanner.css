@@ -1,0 +1,35 @@
+.heroBanner {
+  background-position: left top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--color-gray);
+  height: 24rem;
+}
+
+.heroBanner .container {
+  position: relative;
+  height: 100%;
+}
+
+.heroBanner .container h1 {
+  position: absolute;
+  left: 2rem;
+  background-color: var(--color-white);
+  color: var(--color-title);
+  opacity: 0.9;
+  margin-bottom: 0;
+  width: auto;
+  bottom: 3rem;
+  padding: 1.125rem;
+  font-size: 2.625rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .heroBanner {
+    height: 10rem;
+  }
+
+  .heroBanner .container h1 {
+    font-size: 2rem;
+  }
+}

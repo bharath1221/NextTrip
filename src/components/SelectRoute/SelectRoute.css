@@ -1,0 +1,50 @@
+.selectRoute {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.heading {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.selctionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.error {
+  font-size: 1rem;
+  color: var(--color-red);
+  line-height: 1.5;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.stopError {
+  padding: 1.5rem;
+  font-size: 1.125rem;
+  background-color: var(--color-gray);
+  text-align: left;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .selectRoute {
+    margin: 2rem 0;
+  }
+  .heading {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  .stopError {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--color-gray);
+  }
+}

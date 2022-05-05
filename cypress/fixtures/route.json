@@ -1,0 +1,12 @@
+[
+    {
+        "route_id": "901",
+        "agency_id": 0,
+        "route_label": "METRO Blue Line"
+    },
+    {
+        "route_id": "902",
+        "agency_id": 0,
+        "route_label": "METRO Green Line"
+    }
+]

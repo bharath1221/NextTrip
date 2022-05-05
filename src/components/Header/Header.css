@@ -1,0 +1,17 @@
+.header {
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-small);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header .container {
+  padding: 1rem 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .container img {
+    max-width: 10rem;
+  }
+}

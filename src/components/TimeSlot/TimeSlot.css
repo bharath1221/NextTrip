@@ -1,0 +1,151 @@
+.timeSlotContainer {
+  margin-top: 3rem;
+  background-color: var(--color-gray);
+  margin-bottom: 1rem;
+}
+
+.stopDescription,
+.showAllContainer,
+.emptyContainer {
+  padding: 1rem 2rem;
+}
+
+.emptyContainer p {
+  font-weight: bold;
+  font-size: 1.125rem;
+  text-align: left;
+}
+
+.showAllContainer {
+  text-align: left;
+}
+
+.stopDescription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stopDescription h3 {
+  font-size: 2rem;
+}
+
+.stopDescription p span {
+  font-weight: bold;
+}
+
+.timeSlotTableContainer {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.timeSlotTableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timeSlotTableContainer table thead tr th,
+.timeSlotTableContainer table tbody tr td {
+  padding: 0.75rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.timeSlotTableContainer table thead tr th:first-child,
+.timeSlotTableContainer table tbody tr td:first-child {
+  padding-left: 2rem;
+}
+
+.timeSlotTableContainer table tbody tr td:first-child,
+.timeSlotTableContainer table tbody tr td:last-child {
+  font-weight: bold;
+  width: 10rem;
+}
+
+.timeSlotTableContainer table thead tr th:last-child,
+.timeSlotTableContainer table tbody tr td:last-child {
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.timeSlotTableContainer table thead tr th {
+  background-color: var(--color-yellow);
+  text-transform: uppercase;
+  letter-spacing: 1.28px;
+  font-size: 1.25rem;
+}
+
+.timeSlotTableContainer table tbody tr {
+  border-bottom: 1px solid var(--color-title);
+}
+
+.timeSlotTableContainer table tbody tr td {
+  border-bottom: 1px solid var(--color-title);
+  font-size: 1.5rem;
+}
+
+.broadcastImage {
+  animation: fadeIn 1s infinite alternate;
+}
+
+.showAllContainer button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--color-body);
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .stopDescription,
+  .showAllContainer,
+  .emptyContainer {
+    padding: 1rem;
+  }
+  .showAllContainer button {
+    font-size: 1rem;
+  }
+  .emptyContainer p {
+    font-size: 1rem;
+  }
+  .stopDescription h3 {
+    font-size: 1.2rem;
+  }
+  .timeSlotTableContainer table thead tr th {
+    font-size: 1rem;
+  }
+  .timeSlotTableContainer table tbody tr td {
+    font-size: 1rem;
+  }
+  .timeSlotTableContainer table thead tr th:first-child,
+  .timeSlotTableContainer table tbody tr td:first-child {
+    padding-left: 1rem;
+  }
+  .timeSlotTableContainer table thead tr th:last-child,
+  .timeSlotTableContainer table tbody tr td:last-child {
+    padding-right: 1rem;
+  }
+  .timeSlotTableContainer table tbody tr td:first-child,
+  .timeSlotTableContainer table tbody tr td:last-child {
+    width: 5rem;
+  }
+}

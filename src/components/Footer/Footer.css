@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--color-gray);
+  padding: 5rem 0;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.copyright a {
+  font-weight: bold;
+  color: var(--color-link);
+}
+
+.copyright a:hover {
+  color: var(--color-link-hover);
+}
